@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-gray-100;
+}
+
+label.input-label{
+    @apply uppercase text-gray-500 font-semibold text-xs mb-2;
+}
+
+input[type="text"], textarea {
+    @apply py-2 px-2 bg-gray-100 w-full ;
+}
+
+.radio-togglers {
+    @apply p-1 bg-gray-200 border border-blue-500 inline-flex cursor-pointer;
+}
+
+.radio-togglers div{
+    @apply p-2 px-4 text-gray-700 block flex items-center gap-2 cursor-pointer;
+}
+
+.radio-togglers input[type="radio"]{
+    @apply hidden;
+}
+
+.radio-togglers input[type="radio"]:checked + div{
+    @apply bg-white text-blue-600 cursor-pointer;
+}
